@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "bentley",
+    "name": "Abnegation",
     "slug": "bentley",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "bentley",
+    "scheme": "abnegation",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.hellopiyush.abnegation"
     },
     "android": {
       "adaptiveIcon": {
@@ -18,7 +19,7 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.hellopiyush.bentley"
+      "package": "com.hellopiyush.abnegation"
     },
     "web": {
       "output": "static",
