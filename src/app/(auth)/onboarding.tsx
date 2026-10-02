@@ -1,20 +1,18 @@
-import { router, useLocalSearchParams } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { StyleSheet, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-export default function Shop() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+export default function Onboarding() {
   return (
     <SafeAreaView style={styles.container}>
-      <View>
-        <Text>Shop {id}</Text>
-        <Pressable onPress={() => router.dismissTo("/")} style={styles.link}>
-          <Text>Home ↗️</Text>
-        </Pressable>
-      </View>
+      <Text>Onboarding Screen</Text>
+      <Link href="/login" style={styles.link}>
+        Login ↗️
+      </Link>
     </SafeAreaView>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

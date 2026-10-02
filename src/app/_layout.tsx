@@ -6,12 +6,8 @@ export default function RootLayout() {
     <>
       <StatusBar style="dark" />
       <Stack screenOptions={{ headerTitleAlign: "center" }}>
-        <Stack.Screen name="index" options={{ title: "Home" }} />
-        <Stack.Screen name="onboarding" options={{ headerShown: false }} />
-        <Stack.Screen
-          name="about"
-          options={{ headerShown: false, presentation: "modal" }}
-        />
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="shop/[id]" options={{ headerShown: false }} />
       </Stack>
     </>
