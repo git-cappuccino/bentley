@@ -2,8 +2,8 @@ import ButtonGroup, { type ButtonItem } from "@/components/ButtonGroup";
 import { Link, router } from "expo-router";
 import { useState } from "react";
 import { Pressable, Text } from "react-native";
-import { StyleSheet } from "react-native-unistyles";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet } from "react-native-unistyles";
 
 export default function Index() {
   const [counter, setCounter] = useState(0);
@@ -29,9 +29,14 @@ export default function Index() {
       </Link>
       {/* TODO: remove with the dev style-check screen before release. */}
       {__DEV__ && (
-        <Link href="/_dev/style-check" style={styles.link}>
-          Style check (dev) ↗️
-        </Link>
+        <>
+          <Link href="/_dev/style-check" style={styles.link}>
+            Style check (dev) ↗️
+          </Link>
+          <Link href="/_playground" style={styles.link}>
+            Playground (dev) ↗️
+          </Link>
+        </>
       )}
       <ButtonGroup buttons={buttons} />
     </SafeAreaView>

@@ -1,6 +1,6 @@
 import { palette as p } from "./palette";
 
-interface ColorTokens {
+export interface ColorTokens {
   background: string;
   surface: string;
   surfaceMuted: string;
